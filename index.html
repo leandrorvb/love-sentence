@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Love Sentence Generator</title>
+  <script>
+    function generateSentence() {
+      var name = document.getElementById('name').value;
+      var girlfriendName = document.getElementById('girlfriend-name').value;
+      
+      var sentence = name + " loves " + girlfriendName + " with all their heart!";
+      
+      document.getElementById('result').textContent = sentence;
+    }
+  </script>
+</head>
+<body>
+  <h1>Love Sentence Generator</h1>
+  <label for="name">Your Name:</label>
+  <input type="text" id="name" placeholder="Enter your name" required><br><br>
+  
+  <label for="girlfriend-name">Your Girlfriend's Name:</label>
+  <input type="text" id="girlfriend-name" placeholder="Enter your girlfriend's name" required><br><br>
+  
+  <button onclick="generateSentence()">Generate Sentence</button><br><br>
+  
+  <p id="result"></p>
+</body>
+</html>
