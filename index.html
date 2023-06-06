@@ -7,7 +7,7 @@
       var name = document.getElementById('name').value;
       var girlfriendName = document.getElementById('girlfriend-name').value;
       
-      var sentence = name + " debes chuparle el culo a " + girlfriendName + " !!!";
+      var sentence = name + " loves " + girlfriendName + " with all their amoooooooor!";
       
       document.getElementById('result').textContent = sentence;
     }
@@ -15,15 +15,14 @@
 </head>
 <body>
   <h1>Love Sentence Generator</h1>
-  <label for="name">Tu Nombre:</label>
-  <input type="text" id="name" placeholder="Enter Tu Nombre" required><br><br>
+  <label for="name">Your Name:</label>
+  <input type="text" id="name" placeholder="Enter your name" required><br><br>
   
-  <label for="girlfriend-name">El Nombre De Tu Novio:</label>
-  <input type="text" id="girlfriend-name" placeholder="Enter El Nombre De Tu Novio" required><br><br>
+  <label for="girlfriend-name">Your Girlfriend's Name:</label>
+  <input type="text" id="girlfriend-name" placeholder="Enter your girlfriend's name" required><br><br>
   
   <button onclick="generateSentence()">Generate Sentence</button><br><br>
   
   <p id="result"></p>
 </body>
 </html>
-
